@@ -1,4 +1,4 @@
-let requestURL = "cats.json";
+let requestURL = "https://rjmcgill.github.io/COMP1073FinalExam/Q3/cats.json";
 
 const request = new XMLHttpRequest();
 request.open("GET", requestURL);
@@ -7,7 +7,7 @@ request.send();
 
 request.onload = function() {
   let productJson = request.response;
-  let button = document.querySelector('input').addEventListener('click', function() {
+  let button = document.querySelector('button').addEventListener('click', function() {
     getInfo(productJson);
   });
 };
