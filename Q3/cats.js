@@ -6,15 +6,15 @@ request.responseType = "json";
 request.send();
 
 request.onload = function() {
-  let productJson = request.response;
+  let catJson = request.response;
   let button = document.querySelector('button').addEventListener('click', function() {
-    getInfo(productJson);
+    getInfo(catJson);
   });
 };
 
-function makeInfo(product, jsonObj) {
+function makeInfo(cat, jsonObj) {
   let promise = new Promise(function(resolve, reject) {
-    if(product > 2 || product < 0) {
+    if(cat > 2 || cat < 0) {
       reject("Cat out of bounds");
     } else {
       resolve();
@@ -24,6 +24,7 @@ function makeInfo(product, jsonObj) {
 }
 
 async function getInfo(jsonObj) {
+  console.log("wow");
   try {
     for(let i = 0; i > 3; i++) {
       let catInfo = await makeInfo(i, jsonObj).then(function() {
