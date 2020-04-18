@@ -1,0 +1,22 @@
+{
+  "cats" : [
+    {
+      "name" : "Stevie",
+      "species" : "Cat",
+      "favFoods" : ["wet food", "dry food", "<strong>any</strong> food"],
+      "age" : 9
+    },
+    {
+      "name" : "Shadow",
+      "species" : "Cat",
+      "favFoods" : ["wet food", "dry food", "bugs", "<strong>all the food!!</strong> "],
+      "age" : 2
+    },
+    {
+      "name" : "Zoey",
+      "species" : "Cat",
+      "favFoods" : ["catfood", "catnip", "cream"],
+      "age" : 13
+    }
+  ]
+}
